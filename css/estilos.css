@@ -1,0 +1,499 @@
+/* =========================================================
+   VARIABLES — COLORES DE MARCA
+========================================================= */
+:root {
+  --bg: #f6fbf9;
+  --card: #ffffff;
+  --muted: #6b7280;
+  --accent: #8FD6C2;
+  --accent-600: #6fc7ab;
+  --text: #0f172a;
+  --glass: rgba(255,255,255,0.7);
+  --shadow: 0 10px 30px rgba(16,24,40,0.06);
+}
+
+/* =========================================================
+   BASE / RESET
+========================================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: linear-gradient(180deg, var(--bg), #ffffff 60%);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 22px;
+}
+
+/* =========================================================
+   NAVBAR / HEADER FIJO
+========================================================= */
+.nav-wrap {
+  position: sticky;
+  top: 0;
+  z-index: 60;
+  backdrop-filter: blur(6px);
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.85),
+    rgba(255,255,255,0.6)
+  );
+  box-shadow: 0 4px 18px rgba(8,12,20,0.04);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(14,59,40,0.06);
+}
+
+.brand h1 {
+  font-size: 16px;
+}
+
+.brand .tag {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.main-nav {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: var(--text);
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.nav-link:hover {
+  background: var(--glass);
+  transform: translateY(-1px);
+}
+
+/* =========================================================
+   BOTONES
+========================================================= */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.btn.primary {
+  background: var(--accent);
+  color: white;
+  box-shadow: 0 6px 18px rgba(111,199,171,0.15);
+}
+
+.btn.primary:hover {
+  background: var(--accent-600);
+}
+
+.btn.ghost {
+  background: transparent;
+  border: 1px solid #e6f2ec;
+  color: var(--text);
+}
+
+/* =========================================================
+   HERO / PORTADA
+========================================================= */
+.hero {
+  padding: 48px 0;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 28px;
+}
+
+.hero-left h2 {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.accent {
+  color: var(--accent-600);
+}
+
+.lead {
+  font-size: 16px;
+  color: var(--muted);
+  margin-bottom: 18px;
+}
+
+.cta-row {
+  display: flex;
+  list-style: none;
+  gap: 12px;
+}
+
+.trust {
+  margin-top: 20px;
+  display: flex;
+  gap: 14px;
+}
+
+.trust div {
+  padding: 12px;
+  min-width: 130px;
+  text-align: center;
+  border-radius: 10px;
+  background: linear-gradient(180deg,#fff,#fbfffb);
+  box-shadow: var(--shadow);
+}
+
+.trust strong {
+  font-size: 18px;
+}
+
+/* =========================================================
+   TARJETAS / FORMULARIO
+========================================================= */
+.card {
+  background: var(--card);
+  padding: 18px;
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+}
+
+.form-compact label {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.form-compact input,
+.form-compact select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #e6f2ec;
+  background: #fbfffb;
+}
+
+/* =========================================================
+   SECCIONES GENERALES
+========================================================= */
+.section {
+  padding: 44px 0;
+}
+
+.section-contrast {
+  background: linear-gradient(180deg,#fbfffd,#ffffff);
+}
+
+h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: var(--text);
+}
+
+.muted {
+  color: var(--muted);
+}
+
+/* =========================================================
+   SOBRE NOSOTROS
+========================================================= */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 20px;
+}
+
+.bullets {
+  margin: 12px 0;
+  padding-left: 20px;
+}
+
+.stat-card {
+  background: var(--card);
+  padding: 18px;
+  border-radius: 12px;
+  margin-bottom: 14px;
+  box-shadow: var(--shadow);
+}
+
+/* =========================================================
+   SERVICIOS
+========================================================= */
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.plan {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  position: relative;
+}
+
+.plan .price {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 6px;
+}
+
+.plan ul {
+  padding-left: 20px;
+  margin-top: 12px;
+}
+
+.ribbon {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: var(--accent-600);
+  color: white;
+  padding: 6px 12px;
+  font-size: 12px;
+  border-radius: 999px;
+}
+
+.plan.recommended {
+  border: 1px solid rgba(111,199,171,0.18);
+  transform: translateY(-4px);
+}
+
+/* =========================================================
+   HORARIOS
+========================================================= */
+.hours-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 16px;
+}
+
+.hours-card {
+  padding: 18px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+}
+
+.hours-table td {
+  padding: 6px 0;
+}
+
+/* =========================================================
+   CONTACTO
+========================================================= */
+.contact-enhanced {
+  padding: 60px 0;
+  background: linear-gradient(180deg,#fff,var(--bg));
+}
+
+.contact-grid-large {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.contact-box {
+  background: var(--card);
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+}
+
+.contact-box h3 {
+  margin-bottom: 12px;
+  color: var(--accent-600);
+}
+
+.contact-info li {
+  font-size: 17px;
+  margin: 10px 0;
+}
+
+.contact-info strong {
+  color: var(--accent-600);
+}
+
+.contact-map-wrapper {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+.footer {
+  padding: 20px 0;
+}
+
+.foot-grid {
+  display: flex;
+  justify-content: center;
+  color: var(--muted);
+}
+
+/* =========================================================
+   BOTÓN VOLVER ARRIBA
+========================================================= */
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: white;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .25s ease, transform .25s ease;
+}
+
+#backToTop.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#backToTop:hover {
+  background: var(--accent-600);
+  transform: translateY(-4px);
+}
+
+/* =========================================================
+   MENÚ HAMBURGUESA (MÓVIL)
+========================================================= */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text);
+}
+
+.mobile-nav {
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  width: 220px;
+  background: white;
+  border-radius: 14px;
+  padding: 12px;
+  box-shadow: var(--shadow);
+  flex-direction: column;
+  gap: 12px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: .25s ease;
+  z-index: 999;
+}
+
+.mobile-nav.active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.mobile-nav a {
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.mobile-nav a:hover {
+  background: var(--glass);
+}
+
+/* =========================================================
+   FIX ANCLAJE — HEADER STICKY
+========================================================= */
+section[id] {
+  scroll-margin-top: 80px;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+@media (max-width: 980px) {
+
+  .main-nav {
+    display: none !important;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hero-grid,
+  .about-grid,
+  .contact-grid-large,
+  .plans-grid,
+  .hours-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    padding: 16px;
+  }
+
+  .trust {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 981px) {
+  .mobile-nav {
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+}
