@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel del Psiquiatra | Mente Clara</title>
+    <link rel="stylesheet" href="css/psicologo.css">
+</head>
+
+<body>
+
+<!-- ============================================ -->
+<!-- PROTECCIÓN DE SESIÓN                         -->
+<!-- ============================================ -->
+<script src="js/proteger.js"></script>
+
+<!-- ============================================ -->
+<!-- HEADER                                        -->
+<!-- ============================================ -->
+<header class="header">
+    <h2>Panel del Psicologo</h2>
+
+    <div class="header-buttons">
+        <a href="index.html" class="back-link">⟵ Volver al inicio</a>
+        <button class="logout-btn" onclick="logout()">Cerrar Sesión</button>
+    </div>
+</header>
+
+<!-- ============================================ -->
+<!-- CONTENIDO PRINCIPAL                           -->
+<!-- ============================================ -->
+<main class="main-content">
+
+    <div class="table-container">
+        <h3>Lista de Pacientes</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Última Cita</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Juan Pérez</td>
+                    <td>28</td>
+                    <td>15/11/2025</td>
+                    <td><button class="action-btn" onclick="mostrarModalExpediente('Juan Pérez')">Ver</button></td>
+                </tr>
+
+                <tr>
+                    <td>María López</td>
+                    <td>34</td>
+                    <td>10/11/2025</td>
+                    <td><button class="action-btn" onclick="mostrarModalExpediente('María López')">Ver</button></td>
+                </tr>
+
+                <tr>
+                    <td>Luis García</td>
+                    <td>22</td>
+                    <td>18/11/2025</td>
+                    <td><button class="action-btn" onclick="mostrarModalExpediente('Luis García')">Ver</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</main>
+
+<!-- ======================================================== -->
+<!-- MODAL PERSONALIZADO                                      -->
+<!-- ======================================================== -->
+<div id="modalExpediente" class="modal-overlay">
+    <div class="modal-box">
+        <h3>Expediente del Paciente</h3>
+        <p id="modalTexto"></p>
+
+        <button class="modal-btn" onclick="cerrarModal()">Cerrar</button>
+    </div>
+</div>
+
+<!-- ============================================ -->
+<!-- SCRIPTS                                       -->
+<!-- ============================================ -->
+<script>
+function logout() {
+    localStorage.clear();
+    window.location.href = "login.html";
+}
+</script>
+
+<!-- Modal dinámico -->
+<script src="js/modal.js"></script>
+
+</body>
+</html>

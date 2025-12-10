@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mente Clara | Clínica Psiquiátrica</title>
+
+  <link rel="stylesheet" href="css/estilos.css" />
+  <link rel="icon" type="image/png" href="img/logo.png" />
+</head>
+
+<body>
+
+  <!-- ========================================================= -->
+  <!--  NAVBAR / ENCABEZADO FIJO                                -->
+  <!-- ========================================================= -->
+  <header class="nav-wrap">
+    <div class="container nav">
+
+      <div class="brand">
+        <img src="img/logo.png" alt="Logo Mente Clara" class="logo">
+        <div>
+          <h1>Mente Clara</h1>
+          <p class="tag">Cuidamos tu bienestar mental</p>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <a href="#inicio" class="nav-link">Inicio</a>
+        <a href="#nosotros" class="nav-link">Sobre Nosotros</a>
+        <a href="#servicios" class="nav-link">Servicios</a>
+        <a href="#horarios" class="nav-link">Horarios</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+        <a href="login.html" class="nav-link">Iniciar Sesión</a>
+      </nav>
+
+      <!-- Menú móvil -->
+      <button id="hamburgerBtn" class="hamburger">☰</button>
+
+      <nav id="mobileNav" class="mobile-nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Sobre Nosotros</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#horarios">Horarios</a>
+        <a href="#contacto">Contacto</a>
+         <a href="login.html">Iniciar Sesión</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- ========================================================= -->
+  <!--  HERO                                                     -->
+  <!-- ========================================================= -->
+  <section id="inicio" class="hero">
+    <div class="container hero-grid">
+
+      <div class="hero-left">
+        <h2>Bienvenido a <span class="accent">Mente Clara</span></h2>
+        <p class="lead">
+          Tu espacio seguro para cuidar la mente y fortalecer el equilibrio emocional.
+          Ofrecemos atención presencial y online con profesionales calificados.
+        </p>
+
+        <ul class="cta-row">
+          <li><a href="#servicios" class="btn primary">Ver Servicios</a></li>
+          <li><a href="#contacto" class="btn ghost">Contáctanos</a></li>
+        </ul>
+
+        <div class="trust">
+          <div><strong>+10 Años</strong> de experiencia</div>
+          <div><strong>+1200</strong> Pacientes satisfechos</div>
+          <div><strong>Atención</strong> presencial y online</div>
+        </div>
+      </div>
+
+      <div class="card highlight">
+        <h4>Agenda tu cita</h4>
+
+        <form class="form-compact">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" type="text" placeholder="Tu nombre completo">
+
+          <label for="tipo">Tipo de atención</label>
+          <select id="tipo">
+            <option>Consulta presencial</option>
+            <option>Consulta online</option>
+          </select>
+
+          <label for="fecha">Fecha preferida</label>
+          <input id="fecha" type="date">
+
+          <button type="submit" class="btn primary" style="width:100%">
+            Reservar Cita
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================= -->
+  <!--  SOBRE NOSOTROS                                           -->
+  <!-- ========================================================= -->
+  <section id="nosotros" class="section section-contrast">
+    <div class="container about-grid">
+
+      <div>
+        <h3>Sobre Nosotros</h3>
+        <p>
+          En <strong>Mente Clara</strong> somos un equipo de psiquiatras, psicólogos clínicos y terapeutas
+          dedicados a mejorar la salud mental de nuestros pacientes.
+        </p>
+
+        <ul class="bullets">
+          <li><strong>Atención personalizada</strong> adaptada a tus necesidades.</li>
+          <li><strong>Confidencialidad garantizada</strong>.</li>
+          <li><strong>Profesionales certificados</strong> con amplia experiencia.</li>
+          <li><strong>Ambiente cálido y seguro</strong>.</li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="stat-card">
+          <h4>📘 Nuestra Misión</h4>
+          <p>Brindar atención psicológica y psiquiátrica de calidad.</p>
+        </div>
+
+        <div class="stat-card">
+          <h4>🌱 Nuestra Visión</h4>
+          <p>Ser la clínica de referencia en salud mental en el país.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================= -->
+  <!--  SERVICIOS                                                -->
+  <!-- ========================================================= -->
+  <section id="servicios" class="section">
+    <div class="container">
+
+      <h3>Nuestros Servicios</h3>
+      <p class="muted">Modalidades adaptadas a tus necesidades.</p>
+
+      <div class="plans-grid">
+
+        <div class="plan">
+          <h4>Atención Presencial</h4>
+          <div class="price">S/ 150 por sesión</div>
+          <ul>
+            <li>Consultas individuales</li>
+            <li>Terapia familiar</li>
+            <li>Evaluaciones psicológicas</li>
+          </ul>
+        </div>
+
+        <div class="plan recommended">
+          <span class="ribbon">Popular</span>
+          <h4>Atención Online</h4>
+          <div class="price">S/ 100 por sesión</div>
+          <ul>
+            <li>Videoconsultas seguras</li>
+            <li>Soporte emocional remoto</li>
+            <li>Acceso desde casa</li>
+          </ul>
+        </div>
+
+        <div class="plan">
+          <h4>Plan Corporativo</h4>
+          <div class="price">Desde S/ 500 / mes</div>
+          <ul>
+            <li>Charlas de bienestar emocional</li>
+            <li>Atención para trabajadores</li>
+            <li>Evaluaciones grupales</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================= -->
+  <!--  HORARIOS                                                 -->
+  <!-- ========================================================= -->
+  <section id="horarios" class="section section-contrast">
+    <div class="container">
+
+      <h3>Horarios de Atención</h3>
+
+      <div class="hours-grid">
+
+        <div class="hours-card">
+          <h4>Consultas Presenciales</h4>
+          <table class="hours-table">
+            <tr><td>Lunes - Viernes:</td><td>8:00 a.m. - 6:00 p.m.</td></tr>
+            <tr><td>Sábados:</td><td>9:00 a.m. - 1:00 p.m.</td></tr>
+          </table>
+        </div>
+
+        <div class="hours-card">
+          <h4>Consultas Online</h4>
+          <table class="hours-table">
+            <tr><td>Lunes - Viernes:</td><td>8:00 a.m. - 9:00 p.m.</td></tr>
+            <tr><td>Domingos:</td><td>10:00 a.m. - 2:00 p.m.</td></tr>
+          </table>
+        </div>
+
+        <div class="hours-card">
+          <h4>Urgencias</h4>
+          <table class="hours-table">
+            <tr><td>24 horas</td><td>Disponible vía chat</td></tr>
+          </table>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================= -->
+  <!--  CONTACTO                                                 -->
+  <!-- ========================================================= -->
+  <section id="contacto" class="section contact-enhanced">
+    <div class="container contact-grid-large">
+
+      <div class="contact-box">
+        <h3>Contacto Directo</h3>
+        <p class="muted">Estamos aquí para ayudarte.</p>
+
+        <ul class="bullets contact-info">
+          <li><strong>📞 Teléfono:</strong> +51 923 764 310</li>
+          <li><strong>📧 Correo:</strong> contacto@menteclara.com</li>
+          <li><strong>📍 Dirección:</strong> Calle Salud Mental 123, Ica</li>
+        </ul>
+      </div>
+
+      <div class="contact-map-wrapper">
+  <iframe
+    width="100%"
+    height="360"
+    style="border:0; border-radius:14px;"
+    loading="lazy"
+    allowfullscreen
+    referrerpolicy="no-referrer-when-downgrade"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.58552082!2d-75.7371!3d-14.0676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2zMTTCsDA0JzAzLjQiUyA3NcKwNDQnMDUuNSJX!5e0!3m2!1ses!2spe!4v170000000"
+  ></iframe>
+</div>
+
+  </section>
+
+  <!-- BOTÓN VOLVER ARRIBA -->
+  <button id="backToTop">↑</button>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container foot-grid">
+      <p>© 2025 Mente Clara - Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>

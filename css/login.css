@@ -1,0 +1,107 @@
+/* =========================================================
+   VARIABLES
+========================================================= */
+:root {
+  --bg: #f6fbf9;
+  --card: #ffffff;
+  --accent: #8FD6C2;
+  --accent-600: #6fc7ab;
+  --text: #0f172a;
+  --shadow: 0 10px 30px rgba(16,24,40,0.08);
+}
+
+/* =========================================================
+   BODY — CENTRADO PERFECTO
+========================================================= */
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;   
+  align-items: center;       
+  background: linear-gradient(180deg, var(--bg), #fff);
+  font-family: 'Inter', system-ui, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* =========================================================
+   CUADRO DEL LOGIN — MÁS GRANDE
+========================================================= */
+.login-container {
+  background: var(--card);
+  width: 90vw;          
+  max-width: 480px;    
+  min-height: 520px;    
+  padding: 40px 32px;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+/* Título */
+.login-container h2 {
+  color: var(--accent-600);
+  font-size: 28px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+/* =========================================================
+   CAMPOS
+========================================================= */
+label {
+  display: block;
+  text-align: left;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 6px;
+  font-size: 18px;
+}
+
+input {
+  width: 100%;
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid #e6f2ec;
+  background: #fbfffb;
+  margin-bottom: 18px;
+  font-size: 18px;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(143,214,194,0.35);
+}
+
+/* =========================================================
+   BOTÓN
+========================================================= */
+button {
+  width: 100%;
+  padding: 16px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(111,199,171,0.20);
+}
+
+button:hover {
+  background: var(--accent-600);
+}
+
+/* =========================================================
+   LINK VOLVER
+========================================================= */
+.back-link {
+  display: block;
+  margin-top: 18px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--accent-600);
+}
