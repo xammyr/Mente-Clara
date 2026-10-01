@@ -78,22 +78,23 @@
       <div class="card highlight">
         <h4>Agenda tu cita</h4>
 
-        <form class="form-compact">
+        <form id="appointmentForm" class="form-compact">
           <label for="nombre">Nombre</label>
-          <input id="nombre" type="text" placeholder="Tu nombre completo">
+          <input id="nombre" type="text" placeholder="Tu nombre completo" required>
 
           <label for="tipo">Tipo de atención</label>
-          <select id="tipo">
+          <select id="tipo" required>
             <option>Consulta presencial</option>
             <option>Consulta online</option>
           </select>
 
           <label for="fecha">Fecha preferida</label>
-          <input id="fecha" type="date">
+          <input id="fecha" type="date" required>
 
           <button type="submit" class="btn primary" style="width:100%">
             Reservar Cita
           </button>
+          <p id="appointmentMessage" class="appointment-message" role="status" aria-live="polite" hidden></p>
         </form>
       </div>
 
